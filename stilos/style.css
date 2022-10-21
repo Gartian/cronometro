@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url(../img/fondo.png);
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    font-size: 32px;
+    text-shadow: -1px 0px 15px rgb(0, 195, 255);
+    color: lightgray;
+}
+
+.number {
+    display: inline-block;
+    width: 140px;
+    font-size: 128px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: red;
+}
+
+
+.buttons button {
+    margin: 0 7px;
+    padding: 40px;
+    border: none;
+    border-radius: 50%;
+}
+
+
+#play {
+    background-image: url(../img/Botonsitoplay.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#stop {
+    background-image: url(../img/Botonsitostop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#play:active {
+    background-color: lightgreen ;
+}
+
+
+#stop:active {
+    background-color: lightcoral ;
+}
